@@ -1,0 +1,898 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/background2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  section nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 22px #9d13ed;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    animation: slideDown 0.5s ease-in-out;
+  }
+  
+  @keyframes slideDown {
+    from {
+      top: -100px;
+    }
+    to {
+      top: 0;
+    }
+  }
+
+section nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 10px 10px;
+    transition: transform 0.3s ease-in-out;
+}
+section nav .logo img:hover {
+    transform: scale(1.5);
+  }
+
+section nav ul{
+    list-style: none;
+}
+
+section nav li{
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #4a4a4a;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+}
+
+section nav li a{
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+section nav li a:hover{
+    color: rgb(159, 58, 222);
+}
+
+
+
+section .main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+    position: relative;
+    animation: slideUp 0.5s ease-in-out;
+  }
+  
+  @keyframes slideUp {
+    from {
+      bottom: -100px;
+    }
+    to {
+      bottom: 0;
+    }
+  }
+  
+
+section .main h1{
+    position: relative;
+    font-size: 55px;
+    top: 80px;
+    left: 0px;
+    color: rgb(255, 247, 0);
+}
+
+section .main h1 span{
+    color: #a882d8;
+}
+
+section .main p{
+    width: 650px;
+    text-align: justify;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 22px;
+    position: relative;
+    top: 125px;
+    left: 1px;
+}
+
+section .main .main_tag .main_btn{
+    background: rgb(159, 58, 222);
+    padding: 10px 20px;
+    position: relative;
+    top: 200px;
+    left: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+section .main .main_img img{
+    width: 780px;
+    position: relative;
+    top: 90px;
+    left: 35px;
+}
+
+/* dropdown top menu */
+
+
+.dropbtn {
+    background-color: rgb(159, 58, 222);
+    color: white;
+    padding: 15px 30px;
+    margin: 0 50px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    animation: bounce 1s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(-10px);
+      animation-timing-function: ease-in;
+    }
+    30% {
+      transform: translateY(10px);
+      animation-timing-function: ease-out;
+    }
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width:
+   
+  160px;
+    box-shadow: 0px
+   
+  8px
+   
+  16px
+   
+  0px
+   
+  rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .dropdown-content
+   
+  a {
+    color: black;
+    padding: 12px
+   
+  16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown
+   
+  a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover
+   
+  .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #2980B9;
+  }
+
+
+
+
+
+
+/*about*/
+
+.about{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .about_image img{
+    width: 700px;
+}
+
+.about .about_tag h1{
+    font-size: 50px;
+    position: relative;
+    bottom: 35px;
+}
+
+.about .about_tag p{
+    font-size: 1.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 22px;
+    width: 650px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.about .about_tag .about_btn{
+    padding: 10px 20px;
+    background: rgb(159, 58, 222);
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    top: 50px;
+}
+#more {display: none;}
+
+
+
+
+
+
+/*Featured and Manipulation*/
+
+
+
+
+
+
+.featured_boks{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+}
+
+.featured_boks h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+
+.featured_boks .featured_book_box{
+    width: 95%;
+    height: 60vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.featured_boks .featured_book_box .featured_book_card{
+    width: 250px;
+    height: 460px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid rgb(222, 66, 123);
+    margin: auto 20px;
+}
+
+.featured_boks .featured_book_box .featured_book_card:hover{
+    box-shadow: 0 0 5px rgb(138, 10, 218);
+    transition: all ease-in-out 0.2s;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_img img{
+    width: 150px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag h2{
+    margin: 12px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .writer{
+    color: rgb(138, 10, 218);
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .categories{
+    color: rgb(158, 53, 223);
+    margin-top: 8px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .book_price{
+    margin-top: 8px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .f_btn{
+    padding: 8px 20px;
+    border: 2px solid rgb(222, 66, 123);
+    text-decoration: none;
+    color: #000;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(212, 77, 165);
+    border-radius: 10px;
+}
+
+
+
+
+
+
+/* manipulation books */
+
+
+.manipulation_content {
+    background-attachment: fixed;
+    background-image: none;
+    overflow: hidden;
+}
+
+.featured_books{
+    width: 100%;
+    height: 100vh;
+    padding: 10px 0;
+}
+
+.featured_books h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+
+.featured_books .featured_book_box{
+    width: 95%;
+    height: 60vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.featured_books .featured_book_box .featured_book_card{
+    width: 250px;
+    height: 435px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid rgb(222, 66, 123);
+    margin: auto 20px;
+}
+
+.featured_books .featured_book_box .featured_book_card:hover{
+    box-shadow: 0 0 5px rgb(138, 10, 218);
+    transition: all ease-in-out 0.2s;
+}
+
+.featured_books .featured_book_box .featured_book_card .featurde_book_img img{
+    width: 150px;
+}
+
+.featured_books .featured_book_box .featured_book_card .featurde_book_tag h2{
+    margin: 12px;
+}
+
+.featured_books .featured_book_box .featured_book_card .featurde_book_tag .writer{
+    color: rgb(138, 10, 218);
+}
+
+.featured_books .featured_book_box .featured_book_card .featurde_book_tag .categories{
+    color: rgb(158, 53, 223);
+    margin-top: 8px;
+}
+
+.featured_books .featured_book_box .featured_book_card .featurde_book_tag .book_price{
+    margin-top: 8px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.featured_books .featured_book_box .featured_book_card .featurde_book_tag .book_price sub{
+    font-weight: 100;
+    padding: 0 5px;
+}
+
+.featured_books .featured_book_box .featured_book_card .featurde_book_tag .f_btn{
+    padding: 8px 20px;
+    border: 2px solid rgb(222, 66, 123);
+    text-decoration: none;
+    color: #000;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(212, 77, 165);
+    border-radius: 10px;
+}
+
+
+
+/*Fantasy*/
+
+
+
+/* General styling for the arrivals section */
+.arrivals {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 25px;
+    background-color: #f8f8f8;
+    padding: 50px 0; /* Adding some padding for better spacing */
+}
+
+/* Styling for the heading of the arrivals section */
+.arrivals h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 28px;
+    color: #333; 
+}
+
+/* Styling for the container of arrival items */
+.arrivals .arrivals_box {
+    width: 90%; 
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    grid-gap: 30px;
+}
+
+/* Styling for individual arrival cards */
+.arrivals .arrivals_box .arrivals_card {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect for arrival cards */
+.arrivals .arrivals_box .arrivals_card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the image container within the arrival card */
+.arrivals .arrivals_box .arrivals_card .arrivals_image {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+/* Styling for images within the arrival cards */
+.arrivals .arrivals_box .arrivals_card .arrivals_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for images within arrival cards */
+.arrivals .arrivals_box .arrivals_card:hover .arrivals_image img {
+    transform: scale(1.2);
+}
+
+/* Styling for the tag and button within the arrival card */
+.arrivals .arrivals_box .arrivals_card .arrivals_tag {
+    margin-top: 15px;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag p {
+    font-family: 'Arial', sans-serif; /* Changing the font to a more common one */
+    font-size: 1em;
+    margin: 8px 0;
+    color: #555; /* Adjusting the color for better contrast */
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .arrivals_btn {
+    display: inline-block;
+    padding: 8px 20px;
+    border: 2px solid rgb(158, 53, 223);
+    background-color: rgb(158, 53, 223);
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover effect for the button within arrival cards */
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .arrivals_btn:hover {
+    background-color: #fff;
+    color: #ff6699;
+}
+
+
+
+
+
+
+/* General styling for the life section */
+
+.life {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 25px;
+    background-color: #f8f8f8;
+    padding: 50px 0; /* Adding some padding for better spacing */
+}
+
+/* Styling for the heading of the life section */
+.life h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 28px;
+    color: #333;
+}
+
+/* Styling for the container of life items */
+.life .life_box {
+    width: 90%; /* Making the container slightly smaller for better aesthetics */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    grid-gap: 20px;
+}
+
+/* Styling for individual life cards */
+.life .life_box .life_card {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px; /* Adding spacing between cards */
+}
+
+/* Hover effect for life cards */
+.life .life_box .life_card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the image container within the life card */
+.life .life_box .life_card .life_image {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+/* Styling for images within the life cards */
+.life .life_box .life_card .life_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for images within life cards */
+.life .life_box .life_card:hover .life_image img {
+    transform: scale(1.2);
+}
+
+/* Styling for the tag and button within the life card */
+.life .life_box .life_card .life_tag {
+    margin-top: 15px;
+}
+
+.life .life_box .life_card .life_tag p {
+    font-family: 'Arial', sans-serif; /* Changing the font to a more common one */
+    font-size: 1em;
+    margin: 8px 0;
+    color: #555; /* Adjusting the color for better contrast */
+}
+
+.life .life_box .life_card .life_tag .life_btn {
+    display: inline-block;
+    margin-top: 10px; /* Adding some spacing between the text and the button */
+    padding: 8px 20px;
+    border: 2px solid rgb(158, 53, 223);
+    background-color: rgb(158, 53, 223);
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover effect for the button within life cards */
+.life .life_box .life_card .life_tag .life_btn:hover {
+    background-color: #fff;
+    color: #ff6699;
+}
+
+
+
+  
+
+
+/*Banner*/
+
+.banner{
+    width: 100%;
+    height: 40vh;
+    background-image: url(image/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.banner .banner_btn{
+    padding: 10px 20px;
+    background: rgb(159, 58, 222);
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    top: 80%;
+    left: 80%;
+}
+
+
+
+
+/*Blog*/
+
+.blog{
+    width: 100%;
+    height: auto;
+    margin: 25px 0;
+}
+
+.blog h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.blog .blog_box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.blog .blog_box .blog_card{
+    margin: 0 auto;
+    width: 450px;
+    height: auto;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+.blog .blog_box .blog_card .blog_img{
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.blog .blog_box .blog_card .blog_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog .blog_box .blog_card .blog_tag{
+    padding: 20px;
+}
+
+.blog .blog_box .blog_card .blog_tag h2{
+    color: rgb(159, 58, 222);
+}
+
+.blog .blog_box .blog_card .blog_tag p{
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 22px;
+}
+
+.blog .blog_box .blog_card .blog_tag .blog_icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(159, 58, 222);
+    cursor: pointer;
+}
+
+/*services*/
+
+.services{
+    width: 100%;
+    height: auto;
+    margin: 35px 0;
+}
+
+.services .services_box{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.services .services_box .services_card{
+    text-align: center;
+    width: 310px;
+    height: auto;
+    box-shadow: 0 0 8px rgb(138, 10, 218);
+    padding: 15px 10px;
+}
+
+.services .services_box .services_card i{
+    color: rgb(138, 10, 218);
+    font-size: 45px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.services .services_box .services_card h3{
+    margin-bottom: 10px;
+}
+
+
+
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    background: #eaeaea;
+}
+
+footer .footer_main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer_main .tag{
+    margin: 10px 0;
+}
+
+footer .footer_main .tag img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+footer .footer_main .tag p{
+    width: 250px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+footer .footer_main .tag h1{
+    font-size: 25px;
+    margin: 25px 0;
+    color: #000;
+}
+
+footer .footer_main .tag a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+footer .footer_main .tag i{
+    margin-right: 10px;
+}
+
+footer .footer_main .tag .social_link i{
+    margin: 0 5px;
+}
+
+footer .footer_main .tag .search_bar{
+    width: 230px;
+    height: 30px;
+    background: rgba(202,202,202);
+    border-radius: 25px;
+}
+
+footer .footer_main .tag .search_bar input{
+    width: 200px;
+    padding: 2px 0;
+    position: relative;
+    top: 17%;
+    left: 6%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    background: none;
+}
+
+footer .footer_main .tag .search_bar button{
+    padding: 7px 15px;
+    background: rgb(159, 58, 222);
+    border: none;
+    margin-top: 15px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: #000;
+}
+
+footer .end span{
+    color: rgb(222, 58, 58);
+    margin-left: 10px;
+}

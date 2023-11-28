@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <section>
+
+        <nav>
+
+            <div class="logo">
+                <img src="image/book-logo.jpg">
+            </div>
+
+            <ul>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Featured">Featured</a></li>
+                <li><a href="#Blog">Blog</a></li>
+                <li><a href="form.html">Contact Us</a></li>
+            </ul>
+
+            <div class="social_icon">
+                <div class="dropdown">
+                    <button class="dropbtn">Menu</button>
+                    <div class="dropdown-content">
+                      <a href="#manipulation">Manipulation</a>
+                      <a href="#Fantasy">Fantasy</a>
+                      <a href="#Slice of Life">Slice of life</a>
+                    </div>
+            </div>
+
+        </nav>
+
+        <div id="main" class="main">
+
+            <div class="main_tag">
+                <h1>WELCOME TO<br><span>BookVerse
+                    <br>"Gateway to Literary 
+                    <br>Bliss!"
+                </span></h1>
+
+                <p>
+                    Are you a passionate bookworm constantly on the lookout
+                    <br> your next literary adventure? Look no further!
+                    <br>Welcome to BookVerse, your personalized haven for
+                    <br> book recommendations that elevate your reading 
+                    <br>experience to new heights.
+                </p>
+                
+                <a href="#" class="main_btn">.</a>
+
+            </div>
+
+            <div class="main_img">
+                <img src="image/table.jpg">
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+   <!--About-->
+
+   <div class="about">
+
+    <div class="about_image">
+        <img src="image/about-us.jpg">
+    </div>
+    <div class="about_tag">
+        <h1>About Us</h1>
+        <p>BookVerse is designed to seamlessly integrate into your reading routine.
+             Access your recommendations and community discussions from your desktop,
+              tablet, or smartphone. Your literary universe is just a click away!
+             <span id="dots">...</span>
+             <span id="more">we understand the joy of discovering a book that captures
+                 your imagination. Our platform employs cutting-edge algorithms and
+                  expert curation to recommend titles tailored to your unique
+                   preferences. Whether you're a fan of heartwarming romances,
+                    spine-tingling mysteries, or mind-bending science fiction, fantasy,
+                     BookVerse has a recommendation just for you.</span>
+                </p>
+        <button onclick="myFunction()" id="myBtn" class="about_btn">Read more</button>
+    </div>
+</div>
+
+
+
+ 
+ 
+       <!--Books-->
+
+       <div id="Featured" class="featured_boks">
+
+        <h1>Featured Books</h1>
+
+        <div class="featured_book_box">
+
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="image/book_1.jpg">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>Boring Girls</h2>
+                    <p class="writer">Sara Taylor</p>
+                    <div class="categories">Thriller, Romance</div>
+                    <p class="book_price">$7.04</p>
+                    <a href="#" class="f_btn">Know More</a>
+                </div>               
+
+            </div>
+
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="image/book_2.png">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>Lookism</h2>
+                    <p class="writer">Park Tae-jun</p>
+                    <div class="categories">Violence, Manhwa</div>
+                    <p class="book_price">$23</p>
+                    <a href="#" class="f_btn">Know More</a>
+                </div>               
+
+            </div>
+
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="image/book_3.jpg">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>Your's</h2>
+                    <p class="writer">C. Toni Graham</p>
+                    <div class="categories">Life, Advanture</div>
+                    <p class="book_price">$27.50</p>
+                    <a href="#" class="f_btn">Know More</a>
+                </div>               
+
+            </div>
+
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="image/book_4.png">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>The Song of Achilles</h2>
+                    <p class="writer">Madeline Miller</p>
+                    <div class="categories">Mystery, Historical</div>
+                    <p class="book_price">$25.50</p>
+                    <a href="#" class="f_btn">Know More</a>
+                </div>               
+
+            </div>
+
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="image/book_5.png">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>Fifty shades Of Grey</h2>
+                    <p class="writer">E. L. James</p>
+                    <div class="categories">Romance, Thriller</div>
+                    <p class="book_price">$25.50</p>
+                    <a href="#" class="f_btn">Know More</a>
+                </div>
+            </div>
+
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="image/book_6.png">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>The Silent Patient</h2>
+                    <p class="writer"> Alex Michaelides</p>
+                    <div class="categories">Crime, Medical</div>
+                    <p class="book_price">$25.50</p>
+                    <a href="#" class="f_btn">Know More</a>
+                </div>               
+
+            </div>
+
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="image/book_7.jpg">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>Tomorrow</h2>
+                    <p class="writer">Gabrielle Zevin</p>
+                    <div class="categories">Adventure fiction</div>
+                    <p class="book_price">$19.67</p>
+                    <a href="#" class="f_btn">Know More</a>
+                </div>               
+
+            </div>
+
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="image/book_8.png">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>American Dirt</h2>
+                    <p class="writer">Jeanine Cummins</p>
+                    <div class="categories">Fiction, Thriller</div>
+                    <p class="book_price">$15</p>
+                    <a href="#" class="f_btn">Know More</a>
+                </div>               
+
+            </div>
+
+
+                </div>               
+
+            </div>
+
+
+
+
+
+<!-- Manipulation books -->
+
+
+
+<section id="manipulation" class="manipulation_content">
+
+    <div class="featured_books">
+
+        <h1>Manipulation Books</h1>
+
+        <div class="featured_book_box">
+
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="image/manipulation_1.jpeg">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>The 48 Laws of Manipulation</h2>
+                    <p class="writer">Robert Greene</p>
+                    <div class="categories">Self-help book</div>
+                    <p class="book_price">$15</p>
+                    <a href="https://openlibrary.org/works/OL1968368W/The_48_Laws_of_Power" class="f_btn">Read More</a>
+                </div>               
+
+            </div>
+
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="image/manipulation_2.jpg">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>The Art of Seduction</h2>
+                    <p class="writer">Robert Greene</p>
+                    <div class="categories">Self-help book</div>
+                    <p class="book_price">$12.75</p>
+                    <a href="#" class="f_btn">Read More</a>
+                </div>               
+
+            </div>
+
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="image/manipulation_3.jpeg">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>The Art of Deption</h2>
+                    <p class="writer">Kevin Mitnick</p>
+                    <div class="categories">Social engineering</div>
+                    <p class="book_price">$12.50</p>
+                    <a href="#" class="f_btn">Read More</a>
+                </div>               
+
+            </div>
+
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="image/manipulation_4.jpg">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>Talking to Strangers</h2>
+                    <p class="writer">Malcolm Gladwell</p>
+                    <div class="categories">Self-help book</div>
+                    <p class="book_price">$9.34</p>
+                    <a href="#" class="f_btn">Read More</a>
+                </div>               
+
+            </div>
+
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="image/manipulation_5.jpg">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>Techniques of Dark Psychology</h2>
+                    <p class="writer">Jonathan Mind</p>
+                    <div class="categories"> Persuasio</div>
+                    <p class="book_price">$11.89</p>
+                    <a href="#" class="f_btn">Read More</a>
+                </div>               
+
+            </div>
+            
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="image/manipulation_6.png">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>Influence</h2>
+                    <p class="writer">Robert B. Cialdini</p>
+                    <div class="categories">Thriller, Psychological</div>
+                    <p class="book_price">$41</p>
+                    <a href="#" class="f_btn">Read More</a>
+                </div>               
+
+            </div>
+
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="image/manipulation_7.png">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>The Prince</h2>
+                    <p class="writer">Niccolò Machiavelli</p>
+                    <div class="categories">Historical, Psychological</div>
+                    <p class="book_price">$31</p>
+                    <a href="#" class="f_btn">Read More</a>
+                </div>               
+
+            </div>
+
+            <div class="featured_book_card">
+
+                <div class="featurde_book_img">
+                    <img src="image/manipulation_8.png">
+                </div>
+
+                <div class="featurde_book_tag">
+                    <h2>Gone Girl</h2>
+                    <p class="writer">Gillian Flynn</p>
+                    <div class="categories">Thriller, Mystery, Suspense</div>
+                    <p class="book_price">$34</p>
+                    <a href="#" class="f_btn">Read More</a>
+                </div>               
+
+            </div>
+
+            
+
+        </div>
+
+    </div>  
+</section>
+
+
+
+
+    <!--Fantasy-->
+
+
+
+
+    <div id="Fantasy" class="arrivals">
+        <h1>Fantasy</h1>
+
+        <div class="arrivals_box">
+
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="image/arrival_1.jpg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>LOIS LOWRY</p>
+                    <a href="#" class="arrivals_btn">Know More</a>
+                </div>
+            </div>
+
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="image/fantasy_2.jpg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>Chugong</p>
+                    <a href="#" class="arrivals_btn">Know More</a>
+                </div>
+            </div>
+
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="image/fantasy_3.jpg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>Tsugumi Ohba</p>
+                    <a href="#" class="arrivals_btn">Know More</a>
+                </div>
+            </div>
+
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="image/arrival_6.jpg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>J.K ROWLING</p>
+                    <a href="#" class="arrivals_btn">Know More</a>
+                </div>
+            </div>
+
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="image/fantasy_5.jpg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>Mizuho Kusanagi</p>
+                    <a href="#" class="arrivals_btn">Know More</a>
+                </div>
+            </div>
+
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="image/arrival_4.jpg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>VICTORIA AVEYARD</p>
+                    <a href="#" class="arrivals_btn">Know More</a>
+                </div>
+            </div>
+            
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="image/arrival_11.jpg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>N. K. Jemisin</p>
+                    <a href="#" class="arrivals_btn">Know More</a>
+                </div>
+            </div>
+
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="image/arrival_12.jpg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>Sarah J. Maas</p>
+                    <a href="#" class="arrivals_btn">Know More</a>
+                </div>
+            </div>
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="image/arrival_13.jpg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>Rebecca Yarros</p>
+                    <a href="#" class="arrivals_btn">Know More</a>
+                </div>
+            </div>
+
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="image/arrival_14.jpeg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>M.L Wang</p>
+                    <a href="#" class="arrivals_btn">Know More</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+
+
+
+<!-- Slice of life -->
+
+
+
+
+
+<div id="Slice of Life" class="life">
+    <h1>Slice of Life</h1>
+
+<div class="life_box">
+
+    <div class="life_card">
+        <div class="life_image">
+            <img src="image/life_1.jpg">
+        </div>
+        <div class="life_tag">
+            <p>Francesc Miralles and Hector Garcia</p>
+            <a href="#" class="life_btn">Know More</a>
+        </div>
+    </div>
+
+    <div class="life_card">
+        <div class="life_image">
+            <img src="image/life_2.jpeg">
+        </div>
+        <div class="life_tag">
+            <p> Kyohiko Azuma</p>
+            <a href="#" class="life_btn">Know More</a>
+        </div>
+    </div>
+
+    <div class="life_card">
+        <div class="life_image">
+            <img src="image/life_3.jpeg">
+        </div>
+        <div class="life_tag">
+            <p>John Green</p>
+            <a href="#" class="life_btn">Know More</a>
+        </div>
+    </div>
+
+    <div class="life_card">
+        <div class="life_image">
+            <img src="image/life_4.jpeg">
+        </div>
+        <div class="life_tag">
+            <p>Toshikazu Kawaguchi</p>
+            <a href="#" class="life_btn">Know More</a>
+        </div>
+    </div>
+
+    <div class="life_card">
+        <div class="life_image">
+            <img src="image/life_5.jpeg">
+        </div>
+        <div class="life_tag">
+            <p>Haruki Murakami</p>
+            <a href="#" class="life_btn">Know More</a>
+        </div>
+    </div>
+
+    <div class="life_card">
+        <div class="life_image">
+            <img src="image/life_6.jpeg">
+        </div>
+        <div class="life_tag">
+            <p>Sayaka Murata</p>
+            <a href="#" class="life_btn">Know More</a>
+        </div>
+    </div>
+
+    <div class="life_card">
+        <div class="life_image">
+            <img src="image/life_7.jpg">
+        </div>
+        <div class="life_tag">
+            <p>John Green</p>
+            <a href="#" class="life_btn">Know More</a>
+        </div>
+    </div>
+
+    <div class="life_card">
+        <div class="life_image">
+            <img src="image/life_8.jpeg">
+        </div>
+        <div class="life_tag">
+            <p>Tj Klune</p>
+            <a href="#" class="life_btn">Know More</a>
+        </div>
+    </div>
+
+    <div class="life_card">
+        <div class="life_image">
+            <img src="image/life_9.jpeg">
+        </div>
+        <div class="life_tag">
+            <p>Sally Rooney</p>
+            <a href="#" class="life_btn">Know More</a>
+        </div>
+    </div>
+
+    <div class="life_card">
+        <div class="life_image">
+            <img src="image/life_10.jpeg">
+        </div>
+        <div class="life_tag">
+            <p>Betty Smith</p>
+            <a href="#" class="life_btn">Know More</a>
+        </div>
+    </div>
+   
+    <div class="life_card">
+        <div class="life_image">
+            <img src="image/life_11.jpeg">
+        </div>
+        <div class="life_tag">
+            <p>R. J. Palacio</p>
+            <a href="#" class="life_btn">Know More</a>
+        </div>
+    </div>
+
+    <div class="life_card">
+        <div class="life_image">
+            <img src="image/life_12.jpeg">
+        </div>
+        <div class="life_tag">
+            <p>F. Scott Fitzgerald</p>
+            <a href="#" class="life_btn">Know More</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+    
+    <!--Banner-->
+
+    <div class="banner">
+        <a href="#" class="banner_btn">Get To Know More</a>
+        
+    </div>
+
+
+
+
+
+    <!--Blog-->
+    
+    <div class="blog">
+        <h1>Our Blog</h1>
+        <div class="blog_box">
+
+            <div class="blog_card">
+                <div class="blog_img">
+                    <img src="image/blog_1.jpg">
+                </div>
+                <div class="blog_tag">
+                    <h2>sci_fi_geek_42</h2>
+                    <p>
+                        "It took me on a mesmerizing journey through a world of mystery and intrigue. Sterling's vivid prose and intricate plot kept me hooked until the last page. The characters felt like old friends, and the unexpected twists left me craving for more. A must-read for anyone who loves a good mystery with a touch of the supernatural."
+                    </p>
+                    <div class="blog_icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog_card">
+                <div class="blog_img">
+                    <img src="image/blog_2.jpg">
+                </div>
+                <div class="blog_tag">
+                    <h2>nature_lover_books</h2>
+                    <p>
+                        "A poetic exploration of the changing seasons and the profound impact they have on the human spirit. The prose is as delicate as falling leaves, and the imagery painted by Evergreen's words is simply breathtaking. Each page is a sensory experience, making this book a perfect companion for those who find solace in the beauty of nature."
+                    </p>
+                    <div class="blog_icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog_card">
+                <div class="blog_img">
+                    <img src="image/blog_3.jpg">
+                </div>
+                <div class="blog_tag">
+                    <h2>fantasy_addict_22</h2>
+                    <p>
+                        "'Chronicles of the Lost Realm' is a fantasy epic that immerses readers in a world of magic, mythical creatures, and ancient prophecies. The storytelling is masterful, with rich details that bring every realm to life. The characters are complex, and the plot twists are both unexpected and satisfying. A captivating read that transports you to a realm of wonder and danger."
+                    </p>
+                    <div class="blog_icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   
+   
+   
+    <!--Services-->
+
+
+
+   <div class="services">
+
+    <div class="services_box">
+
+        <div class="services_card">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3>Fast Delivery</h3>
+            <p>
+                
+            </p>
+        </div>
+
+        <div class="services_card">
+            <i class="fa-solid fa-headset"></i>
+            <h3>24 x 7 Services</h3>
+            <p>
+                
+            </p>
+        </div>
+
+        <div class="services_card">
+            <i class="fa-solid fa-tag"></i>
+            <h3>Best Deal</h3>
+            <p>
+                 
+            </p>
+        </div>
+
+        <div class="services_card">
+            <i class="fa-solid fa-lock"></i>
+            <h3>Secure Payment</h3>
+            <p>
+                
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+    <!--Footer-->
+
+    <footer>
+        <div class="footer_main">
+
+            <div class="tag">
+                <img src="image/book-logo.jpg">
+                <p>
+                    Ready to embark on a reading journey like never before? Join BookVerse today and let the pages of your next favorite book unfold before you. Unleash the power of personalized recommendations, connect with fellow book enthusiasts, and let the magic of storytelling transport you to new worlds. BookVerse - Where Every Book Finds Its Perfect Reader. 📖✨
+                </p>
+
+            </div>
+
+            <div class="tag">
+                <h1>Quick Link</h1>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Featured</a>
+                <a href="#">Arrivals</a>
+                <a href="#">Blog</a>
+            </div>
+
+            <div class="tag">
+                <h1>Contact Info</h1>
+                <a href="#"><i class="fa-solid fa-phone"></i>+94 12 345 6789</a>
+                <a href="#"><i class="fa-solid fa-phone"></i>+94 32 444 699</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i>BookVerse123@gmail.com</a>
+                
+            </div>
+
+            <div class="tag">
+                <h1>Follow Us</h1>
+                <div class="social_link">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                
+            </div>
+
+            <div class="tag">
+                <h1>Newsletter</h1>
+                <div class="search_bar">
+                    <input type="text" placeholder="You email id here">
+                    <button type="submit">Subscribe</button>
+                </div>                
+            </div>            
+            
+        </div>
+
+        <p class="end">Design By<span><i class="fa-solid fa-face-grin"></i>Raigner Stark</span></p>
+
+    </footer>
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="script.js"></script>
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+</body>
+</html>
