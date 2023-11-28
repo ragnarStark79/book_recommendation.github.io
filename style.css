@@ -819,9 +819,7 @@ footer .footer_main{
     justify-content: space-around;
 }
 
-footer .footer_main .tag{
-    margin: 10px 0;
-}
+
 
 footer .footer_main .tag img{
     width: 100px;
@@ -836,7 +834,7 @@ footer .footer_main .tag p{
 
 footer .footer_main .tag h1{
     font-size: 25px;
-    margin: 25px 0;
+    margin: 40px 10px;
     color: #000;
 }
 
