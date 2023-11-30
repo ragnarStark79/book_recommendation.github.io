@@ -485,10 +485,10 @@ section .main .main_img img{
     height: 100vh;
     margin-bottom: 25px;
     background-color: #f8f8f8;
-    padding: 50px 0; /* Adding some padding for better spacing */
+    padding: 50px 0; 
 }
 
-/* Styling for the heading of the arrivals section */
+
 .arrivals h1 {
     font-size: 50px;
     text-align: center;
@@ -496,7 +496,7 @@ section .main .main_img img{
     color: #333; 
 }
 
-/* Styling for the container of arrival items */
+
 .arrivals .arrivals_box {
     width: 90%; 
     margin: 0 auto;
@@ -517,20 +517,20 @@ section .main .main_img img{
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* Hover effect for arrival cards */
+
 .arrivals .arrivals_box .arrivals_card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Styling for the image container within the arrival card */
+
 .arrivals .arrivals_box .arrivals_card .arrivals_image {
     width: 100%;
     height: 150px;
     overflow: hidden;
 }
 
-/* Styling for images within the arrival cards */
+
 .arrivals .arrivals_box .arrivals_card .arrivals_image img {
     width: 100%;
     height: 100%;
@@ -544,16 +544,16 @@ section .main .main_img img{
     transform: scale(1.2);
 }
 
-/* Styling for the tag and button within the arrival card */
+
 .arrivals .arrivals_box .arrivals_card .arrivals_tag {
     margin-top: 15px;
 }
 
 .arrivals .arrivals_box .arrivals_card .arrivals_tag p {
-    font-family: 'Arial', sans-serif; /* Changing the font to a more common one */
+    font-family: 'Arial', sans-serif; 
     font-size: 1em;
     margin: 8px 0;
-    color: #555; /* Adjusting the color for better contrast */
+    color: #555; 
 }
 
 .arrivals .arrivals_box .arrivals_card .arrivals_tag .arrivals_btn {
@@ -578,7 +578,7 @@ section .main .main_img img{
 
 
 
-/* General styling for the life section */
+
 
 .life {
     width: 100%;
@@ -598,10 +598,10 @@ section .main .main_img img{
 
 /* Styling for the container of life items */
 .life .life_box {
-    width: 90%; /* Making the container slightly smaller for better aesthetics */
+    width: 90%; 
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout and referenced w3 school (help)*/
     grid-gap: 20px;
 }
 
@@ -624,14 +624,14 @@ section .main .main_img img{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Styling for the image container within the life card */
+
 .life .life_box .life_card .life_image {
     width: 100%;
     height: 150px;
     overflow: hidden;
 }
 
-/* Styling for images within the life cards */
+
 .life .life_box .life_card .life_image img {
     width: 100%;
     height: 100%;
@@ -651,7 +651,7 @@ section .main .main_img img{
 }
 
 .life .life_box .life_card .life_tag p {
-    font-family: 'Arial', sans-serif; /* Changing the font to a more common one */
+    font-family: 'Arial', sans-serif; 
     font-size: 1em;
     margin: 8px 0;
     color: #555; /* Adjusting the color for better contrast */
