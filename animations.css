@@ -1,0 +1,336 @@
+/* Animations for BookVerse website */
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide down animation for navigation */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Slide up animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Float animation for images */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 2px 8px rgba(0, 113, 227, 0.2);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 113, 227, 0.4);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 2px 8px rgba(0, 113, 227, 0.2);
+  }
+}
+
+/* Glow animation */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 113, 227, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 113, 227, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 113, 227, 0);
+  }
+}
+
+/* Rotate animation */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Fade slide in animation for carousel items */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Circular progress animation */
+@keyframes circularProgress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+  100% {
+    stroke-dasharray: 100 100;
+  }
+}
+
+/* Pop-up animation */
+@keyframes popUp {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Fade-slide-up animation */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade-slide-left animation */
+@keyframes fadeSlideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Fade-slide-right animation */
+@keyframes fadeSlideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Navigation hide animation */
+@keyframes navHide {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+/* Animation classes */
+.pop-up {
+  animation: popUp 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67) forwards;
+}
+
+.fade-slide-up {
+  animation: fadeSlideUp 0.8s ease forwards;
+}
+
+.fade-slide-left {
+  animation: fadeSlideLeft 0.8s ease forwards;
+}
+
+.fade-slide-right {
+  animation: fadeSlideRight 0.8s ease forwards;
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.nav-visible {
+  animation: slideDown 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.nav-hidden {
+  animation: navHide 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* For staggered animations on grouped elements */
+.stagger-animation > * {
+  opacity: 0;
+}
+
+.stagger-animation > *:nth-child(1) { 
+  animation: fadeSlideUp 0.5s 0.1s ease forwards; 
+}
+.stagger-animation > *:nth-child(2) { 
+  animation: fadeSlideUp 0.5s 0.2s ease forwards; 
+}
+.stagger-animation > *:nth-child(3) { 
+  animation: fadeSlideUp 0.5s 0.3s ease forwards; 
+}
+.stagger-animation > *:nth-child(4) { 
+  animation: fadeSlideUp 0.5s 0.4s ease forwards; 
+}
+.stagger-animation > *:nth-child(5) { 
+  animation: fadeSlideUp 0.5s 0.5s ease forwards; 
+}
+.stagger-animation > *:nth-child(n+6) { 
+  animation: fadeSlideUp 0.5s 0.6s ease forwards; 
+}
+
+/* Common animation classes */
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.slide-down {
+  animation: slideDown 0.5s ease-out forwards;
+}
+
+.slide-up {
+  animation: slideUp 0.7s ease-out forwards;
+}
+
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+.glow {
+  animation: glow 2s infinite;
+}
+
+.rotate {
+  animation: rotate 8s linear infinite;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+/* Animation delays */
+.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.delay-3 {
+  animation-delay: 0.3s;
+}
+
+.delay-4 {
+  animation-delay: 0.4s;
+}
+
+.delay-5 {
+  animation-delay: 0.5s;
+}
+
+/* Animation durations */
+.duration-slow {
+  animation-duration: 1.2s;
+}
+
+.duration-fast {
+  animation-duration: 0.5s;
+}
+
+/* Fix animation issues - ensure animations complete properly */
+.animated {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Ensure animate-slide-left animation works correctly */
+.animate-slide-left {
+  animation: fadeSlideLeft 0.8s ease forwards;
+}
+
+/* Ensure animate-slide-right animation works correctly */
+.animate-slide-right {
+  animation: fadeSlideRight 0.8s ease forwards;
+}
+
+/* Ensure animate-slide-up animation works correctly */
+.animate-slide-up {
+  animation: fadeSlideUp 0.8s ease forwards;
+}
+
+/* Immediate animation for critical UI elements */
+.no-animation {
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+  transition: none !important;
+}
+
+/* Animation visibility fix */
+.fade-in, .slide-in {
+  opacity: 0;
+}
+
+.appear, .animated {
+  opacity: 1;
+}

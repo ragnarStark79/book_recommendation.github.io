@@ -7,40 +7,37 @@
     <title>Book Store Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="animations.css">
 </head>
 <body>
     
     <section>
 
         <nav>
-
             <div class="logo">
-                <img src="image/book-logo.jpg">
+                <img src="image/book-logo.jpg" alt="BookVerse Logo">
             </div>
+
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
 
             <ul>
                 <li><a href="#main">Home</a></li>
                 <li><a href="#About">About</a></li>
                 <li><a href="#Featured">Featured</a></li>
+                <li><a href="#manipulation">Manipulation</a></li>
+                <li><a href="#Fantasy">Fantasy</a></li>
+                <li><a href="#Slice of Life">Slice of Life</a></li>
                 <li><a href="#Blog">Blog</a></li>
-                <li><a href="login.html">connect</a></li>
-                <li><a href="signup.html">Join</a></li>
+                <li class="auth-btn sign-in"><a href="login.html">Sign In</a></li>
+                <li class="auth-btn sign-up"><a href="signup.html">Sign Up</a></li>
             </ul>
-
-            <div class="social_icon">
-                <div class="dropdown">
-                    <button class="dropbtn">Menu</button>
-                    <div class="dropdown-content">
-                      <a href="#manipulation">Manipulation</a>
-                      <a href="#Fantasy">Fantasy</a>
-                      <a href="#Slice of Life">Slice of life</a>
-                    </div>
-            </div>
-
         </nav>
 
         <div id="main" class="main">
-
             <div class="main_tag">
                 <h1>WELCOME TO<br><span>BookVerse
                     <br>"Gateway to Literary 
@@ -55,365 +52,312 @@
                     <br>experience to new heights.
                 </p>
                 
-                <a href="#" class="main_btn">.</a>
-
+                <a href="#" class="main_btn pulse-animation">Learn More</a>
             </div>
 
             <div class="main_img">
-                <img src="image/table.jpg">
+                <img src="image/table.jpg" alt="BookVerse Banner">
             </div>
-
         </div>
 
     </section>
 
-
-
-   <!--About-->
-
-   <div id="About" class="about">
-
-    <div class="about_image">
-        <img src="image/about-us.jpg">
-    </div>
-    <div class="about_tag">
-        <h1>About Us</h1>
-        <p>BookVerse is designed to seamlessly integrate into your reading routine.
-             Access your recommendations and community discussions from your desktop,
-              tablet, or smartphone. Your literary universe is just a click away!
-             <span id="dots">...</span>
-             <span id="more">we understand the joy of discovering a book that captures
-                 your imagination. Our platform employs cutting-edge algorithms and
-                  expert curation to recommend titles tailored to your unique
-                   preferences. Whether you're a fan of heartwarming romances,
-                    spine-tingling mysteries, or mind-bending science fiction, fantasy,
-                     BookVerse has a recommendation just for you.</span>
-                </p>
-        <button onclick="myFunction()" id="myBtn" class="about_btn">Read more</button>
-    </div>
-</div>
-
-
-
- 
- 
-       <!--Books-->
-
-       <div id="Featured" class="featured_boks">
-
-        <h1>Featured Books</h1>
-
-        <div class="featured_book_box">
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/book_1.jpg">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>Boring Girls</h2>
-                    <p class="writer">Sara Taylor</p>
-                    <div class="categories">Thriller, Romance</div>
-                    <p class="book_price">$7.04</p>
-                    <a href="#" class="f_btn">Know More</a>
-                </div>               
-
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/book_2.png">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>Lookism</h2>
-                    <p class="writer">Park Tae-jun</p>
-                    <div class="categories">Violence, Manhwa</div>
-                    <p class="book_price">$23</p>
-                    <a href="#" class="f_btn">Know More</a>
-                </div>               
-
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/book_3.jpg">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>Your's</h2>
-                    <p class="writer">C. Toni Graham</p>
-                    <div class="categories">Life, Advanture</div>
-                    <p class="book_price">$27.50</p>
-                    <a href="#" class="f_btn">Know More</a>
-                </div>               
-
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/book_4.png">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>The Song of Achilles</h2>
-                    <p class="writer">Madeline Miller</p>
-                    <div class="categories">Mystery, Historical</div>
-                    <p class="book_price">$25.50</p>
-                    <a href="#" class="f_btn">Know More</a>
-                </div>               
-
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/book_5.png">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>Fifty shades Of Grey</h2>
-                    <p class="writer">E. L. James</p>
-                    <div class="categories">Romance, Thriller</div>
-                    <p class="book_price">$25.50</p>
-                    <a href="#" class="f_btn">Know More</a>
-                </div>
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/book_6.png">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>The Silent Patient</h2>
-                    <p class="writer"> Alex Michaelides</p>
-                    <div class="categories">Crime, Medical</div>
-                    <p class="book_price">$25.50</p>
-                    <a href="#" class="f_btn">Know More</a>
-                </div>               
-
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/book_7.jpg">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>Tomorrow</h2>
-                    <p class="writer">Gabrielle Zevin</p>
-                    <div class="categories">Adventure fiction</div>
-                    <p class="book_price">$19.67</p>
-                    <a href="#" class="f_btn">Know More</a>
-                </div>               
-
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/book_8.png">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>American Dirt</h2>
-                    <p class="writer">Jeanine Cummins</p>
-                    <div class="categories">Fiction, Thriller</div>
-                    <p class="book_price">$15</p>
-                    <a href="#" class="f_btn">Know More</a>
-                </div>               
-
-            </div>
-
-
-                </div>               
-
-            </div>
-
-
-
-
-
-<!-- Manipulation books -->
-
-
-
-<section id="manipulation" class="manipulation_content">
-
-    <div class="featured_books">
-
-        <h1>Manipulation Books</h1>
-
-        <div class="featured_book_box">
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/manipulation_1.jpeg">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>The 48 Laws of Manipulation</h2>
-                    <p class="writer">Robert Greene</p>
-                    <div class="categories">Self-help book</div>
-                    <p class="book_price">$15</p>
-                    <a href="#" class="f_btn">Read More</a>
-                </div>               
-
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/manipulation_2.jpg">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>The Art of Seduction</h2>
-                    <p class="writer">Robert Greene</p>
-                    <div class="categories">Self-help book</div>
-                    <p class="book_price">$12.75</p>
-                    <a href="#" class="f_btn">Read More</a>
-                </div>               
-
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/manipulation_3.jpeg">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>The Art of Deption</h2>
-                    <p class="writer">Kevin Mitnick</p>
-                    <div class="categories">Social engineering</div>
-                    <p class="book_price">$12.50</p>
-                    <a href="#" class="f_btn">Read More</a>
-                </div>               
-
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/manipulation_4.jpg">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>Talking to Strangers</h2>
-                    <p class="writer">Malcolm Gladwell</p>
-                    <div class="categories">Self-help book</div>
-                    <p class="book_price">$9.34</p>
-                    <a href="#" class="f_btn">Read More</a>
-                </div>               
-
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/manipulation_5.jpg">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>Techniques of Dark Psychology</h2>
-                    <p class="writer">Jonathan Mind</p>
-                    <div class="categories"> Persuasio</div>
-                    <p class="book_price">$11.89</p>
-                    <a href="#" class="f_btn">Read More</a>
-                </div>               
-
-            </div>
-            
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/manipulation_6.png">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>Influence</h2>
-                    <p class="writer">Robert B. Cialdini</p>
-                    <div class="categories">Thriller, Psychological</div>
-                    <p class="book_price">$41</p>
-                    <a href="#" class="f_btn">Read More</a>
-                </div>               
-
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/manipulation_7.png">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>The Prince</h2>
-                    <p class="writer">Niccolò Machiavelli</p>
-                    <div class="categories">Historical, Psychological</div>
-                    <p class="book_price">$31</p>
-                    <a href="#" class="f_btn">Read More</a>
-                </div>               
-
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/manipulation_8.png">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>Gone Girl</h2>
-                    <p class="writer">Gillian Flynn</p>
-                    <div class="categories">Thriller, Mystery, Suspense</div>
-                    <p class="book_price">$34</p>
-                    <a href="#" class="f_btn">Read More</a>
-                </div>               
-
-            </div>
-
-            
-
+    <!--About-->
+    <div id="About" class="about">
+        <div class="about_image">
+            <img src="image/about-us.jpg" alt="About Us">
         </div>
+        <div class="about_tag">
+            <h1>About Us</h1>
+            <p>BookVerse is designed to seamlessly integrate into your reading routine.
+                 Access your recommendations and community discussions from your desktop,
+                  tablet, or smartphone. Your literary universe is just a click away!
+                 <span id="dots">...</span>
+                 <span id="more">we understand the joy of discovering a book that captures
+                     your imagination. Our platform employs cutting-edge algorithms and
+                      expert curation to recommend titles tailored to your unique
+                       preferences. Whether you're a fan of heartwarming romances,
+                        spine-tingling mysteries, or mind-bending science fiction, fantasy,
+                         BookVerse has a recommendation just for you.</span>
+                    </p>
+            <button onclick="myFunction()" id="myBtn" class="about_btn">Read more</button>
+        </div>
+    </div>
+ 
+    <!--Featured Books-->
+    <div id="Featured" class="featured_boks">
+        <h1 class="section-heading">Featured Books</h1>
+        
+        <div class="book-carousel">
+            <button class="book-carousel-button book-carousel-button-prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="book-carousel-container">
+                <div class="book-carousel-track">
+                    <!-- Featured book cards -->
+                    <div class="featured_book_card">
+                        <div class="featurde_book_img">
+                            <img src="image/book_1.jpg" alt="Boring Girls">
+                        </div>
+                        <div class="featurde_book_tag">
+                            <h2>Boring Girls</h2>
+                            <p class="writer">Sara Taylor</p>
+                            <div class="categories">Thriller, Romance</div>
+                            <p class="book_price">$7.04</p>
+                            <a href="#" class="f_btn">Know More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="featured_book_card">
+                        <div class="featurde_book_img">
+                            <img src="image/book_2.png" alt="Lookism">
+                        </div>
+                        <div class="featurde_book_tag">
+                            <h2>Lookism</h2>
+                            <p class="writer">Park Tae-jun</p>
+                            <div class="categories">Violence, Manhwa</div>
+                            <p class="book_price">$23</p>
+                            <a href="#" class="f_btn">Know More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="featured_book_card">
+                        <div class="featurde_book_img">
+                            <img src="image/book_3.jpg" alt="Your's">
+                        </div>
+                        <div class="featurde_book_tag">
+                            <h2>Your's</h2>
+                            <p class="writer">C. Toni Graham</p>
+                            <div class="categories">Life, Advanture</div>
+                            <p class="book_price">$27.50</p>
+                            <a href="#" class="f_btn">Know More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="featured_book_card">
+                        <div class="featurde_book_img">
+                            <img src="image/book_4.png" alt="The Song of Achilles">
+                        </div>
+                        <div class="featurde_book_tag">
+                            <h2>The Song of Achilles</h2>
+                            <p class="writer">Madeline Miller</p>
+                            <div class="categories">Mystery, Historical</div>
+                            <p class="book_price">$25.50</p>
+                            <a href="#" class="f_btn">Know More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="featured_book_card">
+                        <div class="featurde_book_img">
+                            <img src="image/book_5.png" alt="Fifty shades Of Grey">
+                        </div>
+                        <div class="featurde_book_tag">
+                            <h2>Fifty shades Of Grey</h2>
+                            <p class="writer">E. L. James</p>
+                            <div class="categories">Romance, Thriller</div>
+                            <p class="book_price">$25.50</p>
+                            <a href="#" class="f_btn">Know More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="featured_book_card">
+                        <div class="featurde_book_img">
+                            <img src="image/book_6.png" alt="The Silent Patient">
+                        </div>
+                        <div class="featurde_book_tag">
+                            <h2>The Silent Patient</h2>
+                            <p class="writer">Alex Michaelides</p>
+                            <div class="categories">Crime, Medical</div>
+                            <p class="book_price">$25.50</p>
+                            <a href="#" class="f_btn">Know More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="featured_book_card">
+                        <div class="featurde_book_img">
+                            <img src="image/book_7.jpg" alt="Tomorrow">
+                        </div>
+                        <div class="featurde_book_tag">
+                            <h2>Tomorrow</h2>
+                            <p class="writer">Gabrielle Zevin</p>
+                            <div class="categories">Adventure fiction</div>
+                            <p class="book_price">$19.67</p>
+                            <a href="#" class="f_btn">Know More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="featured_book_card">
+                        <div class="featurde_book_img">
+                            <img src="image/book_8.png" alt="American Dirt">
+                        </div>
+                        <div class="featurde_book_tag">
+                            <h2>American Dirt</h2>
+                            <p class="writer">Jeanine Cummins</p>
+                            <div class="categories">Fiction, Thriller</div>
+                            <p class="book_price">$15</p>
+                            <a href="#" class="f_btn">Know More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="book-carousel-button book-carousel-button-next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <div class="book-carousel-pagination"></div>
+        </div>
+    </div>
 
-    </div>  
-</section>
-
-
-
+    <!-- Manipulation books -->
+    <section id="manipulation" class="manipulation_content">
+        <div class="featured_books">
+            <h1 class="section-heading">Manipulation Books</h1>
+            
+            <div class="book-carousel">
+                <button class="book-carousel-button book-carousel-button-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="book-carousel-container">
+                    <div class="book-carousel-track">
+                        <!-- Manipulation book cards -->
+                        <div class="featured_book_card">
+                            <div class="featurde_book_img">
+                                <img src="image/manipulation_1.jpeg" alt="The 48 Laws of Manipulation">
+                            </div>
+                            <div class="featurde_book_tag">
+                                <h2>The 48 Laws of Manipulation</h2>
+                                <p class="writer">Robert Greene</p>
+                                <div class="categories">Self-help book</div>
+                                <p class="book_price">$15</p>
+                                <a href="#" class="f_btn">Read More</a>
+                            </div>
+                        </div>
+                        
+                        <div class="featured_book_card">
+                            <div class="featurde_book_img">
+                                <img src="image/manipulation_2.jpg" alt="The Art of Seduction">
+                            </div>
+                            <div class="featurde_book_tag">
+                                <h2>The Art of Seduction</h2>
+                                <p class="writer">Robert Greene</p>
+                                <div class="categories">Self-help book</div>
+                                <p class="book_price">$12.75</p>
+                                <a href="#" class="f_btn">Read More</a>
+                            </div>
+                        </div>
+                        
+                        <div class="featured_book_card">
+                            <div class="featurde_book_img">
+                                <img src="image/manipulation_3.jpeg" alt="The Art of Deception">
+                            </div>
+                            <div class="featurde_book_tag">
+                                <h2>The Art of Deception</h2>
+                                <p class="writer">Kevin Mitnick</p>
+                                <div class="categories">Social engineering</div>
+                                <p class="book_price">$12.50</p>
+                                <a href="#" class="f_btn">Read More</a>
+                            </div>
+                        </div>
+                        
+                        <div class="featured_book_card">
+                            <div class="featurde_book_img">
+                                <img src="image/manipulation_4.jpg" alt="Talking to Strangers">
+                            </div>
+                            <div class="featurde_book_tag">
+                                <h2>Talking to Strangers</h2>
+                                <p class="writer">Malcolm Gladwell</p>
+                                <div class="categories">Self-help book</div>
+                                <p class="book_price">$9.34</p>
+                                <a href="#" class="f_btn">Read More</a>
+                            </div>
+                        </div>
+                        
+                        <div class="featured_book_card">
+                            <div class="featurde_book_img">
+                                <img src="image/manipulation_5.jpg" alt="Techniques of Dark Psychology">
+                            </div>
+                            <div class="featurde_book_tag">
+                                <h2>Techniques of Dark Psychology</h2>
+                                <p class="writer">Jonathan Mind</p>
+                                <div class="categories">Persuasion</div>
+                                <p class="book_price">$11.89</p>
+                                <a href="#" class="f_btn">Read More</a>
+                            </div>
+                        </div>
+                        
+                        <div class="featured_book_card">
+                            <div class="featurde_book_img">
+                                <img src="image/manipulation_6.png" alt="Influence">
+                            </div>
+                            <div class="featurde_book_tag">
+                                <h2>Influence</h2>
+                                <p class="writer">Robert B. Cialdini</p>
+                                <div class="categories">Thriller, Psychological</div>
+                                <p class="book_price">$41</p>
+                                <a href="#" class="f_btn">Read More</a>
+                            </div>
+                        </div>
+                        
+                        <div class="featured_book_card">
+                            <div class="featurde_book_img">
+                                <img src="image/manipulation_7.png" alt="The Prince">
+                            </div>
+                            <div class="featurde_book_tag">
+                                <h2>The Prince</h2>
+                                <p class="writer">Niccolò Machiavelli</p>
+                                <div class="categories">Historical, Psychological</div>
+                                <p class="book_price">$31</p>
+                                <a href="#" class="f_btn">Read More</a>
+                            </div>
+                        </div>
+                        
+                        <div class="featured_book_card">
+                            <div class="featurde_book_img">
+                                <img src="image/manipulation_8.png" alt="Gone Girl">
+                            </div>
+                            <div class="featurde_book_tag">
+                                <h2>Gone Girl</h2>
+                                <p class="writer">Gillian Flynn</p>
+                                <div class="categories">Thriller, Mystery, Suspense</div>
+                                <p class="book_price">$34</p>
+                                <a href="#" class="f_btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="book-carousel-button book-carousel-button-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <div class="book-carousel-pagination"></div>
+            </div>
+        </div>
+    </section>
 
     <!--Fantasy-->
-
-
-
-
     <div id="Fantasy" class="arrivals">
         <h1>Fantasy</h1>
 
         <div class="arrivals_box">
-
+            <!-- Fantasy books -->
             <div class="arrivals_card">
                 <div class="arrivals_image">
-                    <img src="image/arrival_1.jpg">
+                    <img src="image/arrival_1.jpg" alt="Fantasy Book">
                 </div>
                 <div class="arrivals_tag">
                     <p>LOIS LOWRY</p>
                     <a href="#" class="arrivals_btn">Know More</a>
                 </div>
             </div>
-
+            
+            <!-- More fantasy cards -->
             <div class="arrivals_card">
                 <div class="arrivals_image">
-                    <img src="image/fantasy_2.jpg">
+                    <img src="image/fantasy_2.jpg" alt="Fantasy Book">
                 </div>
                 <div class="arrivals_tag">
                     <p>Chugong</p>
@@ -421,9 +365,10 @@
                 </div>
             </div>
 
+            <!-- More fantasy books... -->
             <div class="arrivals_card">
                 <div class="arrivals_image">
-                    <img src="image/fantasy_3.jpg">
+                    <img src="image/fantasy_3.jpg" alt="Fantasy Book">
                 </div>
                 <div class="arrivals_tag">
                     <p>Tsugumi Ohba</p>
@@ -433,7 +378,7 @@
 
             <div class="arrivals_card">
                 <div class="arrivals_image">
-                    <img src="image/arrival_6.jpg">
+                    <img src="image/arrival_6.jpg" alt="Fantasy Book">
                 </div>
                 <div class="arrivals_tag">
                     <p>J.K ROWLING</p>
@@ -443,7 +388,7 @@
 
             <div class="arrivals_card">
                 <div class="arrivals_image">
-                    <img src="image/fantasy_5.jpg">
+                    <img src="image/fantasy_5.jpg" alt="Fantasy Book">
                 </div>
                 <div class="arrivals_tag">
                     <p>Mizuho Kusanagi</p>
@@ -453,7 +398,7 @@
 
             <div class="arrivals_card">
                 <div class="arrivals_image">
-                    <img src="image/arrival_4.jpg">
+                    <img src="image/arrival_4.jpg" alt="Fantasy Book">
                 </div>
                 <div class="arrivals_tag">
                     <p>VICTORIA AVEYARD</p>
@@ -463,7 +408,7 @@
             
             <div class="arrivals_card">
                 <div class="arrivals_image">
-                    <img src="image/arrival_11.jpg">
+                    <img src="image/arrival_11.jpg" alt="Fantasy Book">
                 </div>
                 <div class="arrivals_tag">
                     <p>N. K. Jemisin</p>
@@ -473,16 +418,17 @@
 
             <div class="arrivals_card">
                 <div class="arrivals_image">
-                    <img src="image/arrival_12.jpg">
+                    <img src="image/arrival_12.jpg" alt="Fantasy Book">
                 </div>
                 <div class="arrivals_tag">
                     <p>Sarah J. Maas</p>
                     <a href="#" class="arrivals_btn">Know More</a>
                 </div>
             </div>
+
             <div class="arrivals_card">
                 <div class="arrivals_image">
-                    <img src="image/arrival_13.jpg">
+                    <img src="image/arrival_13.jpg" alt="Fantasy Book">
                 </div>
                 <div class="arrivals_tag">
                     <p>Rebecca Yarros</p>
@@ -492,177 +438,157 @@
 
             <div class="arrivals_card">
                 <div class="arrivals_image">
-                    <img src="image/arrival_14.jpeg">
+                    <img src="image/arrival_14.jpeg" alt="Fantasy Book">
                 </div>
                 <div class="arrivals_tag">
                     <p>M.L Wang</p>
                     <a href="#" class="arrivals_btn">Know More</a>
                 </div>
             </div>
-
-        </div>
-
-    </div>
-    
-
-
-
-<!-- Slice of life -->
-
-
-
-
-
-<div id="Slice of Life" class="life">
-    <h1>Slice of Life</h1>
-
-<div class="life_box">
-
-    <div class="life_card">
-        <div class="life_image">
-            <img src="image/life_1.jpg">
-        </div>
-        <div class="life_tag">
-            <p>Francesc Miralles and Hector Garcia</p>
-            <a href="#" class="life_btn">Know More</a>
         </div>
     </div>
 
-    <div class="life_card">
-        <div class="life_image">
-            <img src="image/life_2.jpeg">
-        </div>
-        <div class="life_tag">
-            <p> Kyohiko Azuma</p>
-            <a href="#" class="life_btn">Know More</a>
+    <!-- Slice of life -->
+    <div id="Slice of Life" class="life">
+        <h1>Slice of Life</h1>
+
+        <div class="life_box">
+            <!-- Slice of life books -->
+            <div class="life_card">
+                <div class="life_image">
+                    <img src="image/life_1.jpg" alt="Slice of Life Book">
+                </div>
+                <div class="life_tag">
+                    <p>Francesc Miralles and Hector Garcia</p>
+                    <a href="#" class="life_btn">Know More</a>
+                </div>
+            </div>
+
+            <!-- More slice of life books... -->
+            <div class="life_card">
+                <div class="life_image">
+                    <img src="image/life_2.jpeg" alt="Slice of Life Book">
+                </div>
+                <div class="life_tag">
+                    <p>Kyohiko Azuma</p>
+                    <a href="#" class="life_btn">Know More</a>
+                </div>
+            </div>
+
+            <div class="life_card">
+                <div class="life_image">
+                    <img src="image/life_3.jpeg" alt="Slice of Life Book">
+                </div>
+                <div class="life_tag">
+                    <p>John Green</p>
+                    <a href="#" class="life_btn">Know More</a>
+                </div>
+            </div>
+
+            <div class="life_card">
+                <div class="life_image">
+                    <img src="image/life_4.jpeg" alt="Slice of Life Book">
+                </div>
+                <div class="life_tag">
+                    <p>Toshikazu Kawaguchi</p>
+                    <a href="#" class="life_btn">Know More</a>
+                </div>
+            </div>
+
+            <div class="life_card">
+                <div class="life_image">
+                    <img src="image/life_5.jpeg" alt="Slice of Life Book">
+                </div>
+                <div class="life_tag">
+                    <p>Haruki Murakami</p>
+                    <a href="#" class="life_btn">Know More</a>
+                </div>
+            </div>
+
+            <div class="life_card">
+                <div class="life_image">
+                    <img src="image/life_6.jpeg" alt="Slice of Life Book">
+                </div>
+                <div class="life_tag">
+                    <p>Sayaka Murata</p>
+                    <a href="#" class="life_btn">Know More</a>
+                </div>
+            </div>
+
+            <div class="life_card">
+                <div class="life_image">
+                    <img src="image/life_7.jpg" alt="Slice of Life Book">
+                </div>
+                <div class="life_tag">
+                    <p>John Green</p>
+                    <a href="#" class="life_btn">Know More</a>
+                </div>
+            </div>
+
+            <div class="life_card">
+                <div class="life_image">
+                    <img src="image/life_8.jpeg" alt="Slice of Life Book">
+                </div>
+                <div class="life_tag">
+                    <p>Tj Klune</p>
+                    <a href="#" class="life_btn">Know More</a>
+                </div>
+            </div>
+
+            <div class="life_card">
+                <div class="life_image">
+                    <img src="image/life_9.jpeg" alt="Slice of Life Book">
+                </div>
+                <div class="life_tag">
+                    <p>Sally Rooney</p>
+                    <a href="#" class="life_btn">Know More</a>
+                </div>
+            </div>
+
+            <div class="life_card">
+                <div class="life_image">
+                    <img src="image/life_10.jpeg" alt="Slice of Life Book">
+                </div>
+                <div class="life_tag">
+                    <p>Betty Smith</p>
+                    <a href="#" class="life_btn">Know More</a>
+                </div>
+            </div>
+            
+            <div class="life_card">
+                <div class="life_image">
+                    <img src="image/life_11.jpeg" alt="Slice of Life Book">
+                </div>
+                <div class="life_tag">
+                    <p>R. J. Palacio</p>
+                    <a href="#" class="life_btn">Know More</a>
+                </div>
+            </div>
+
+            <div class="life_card">
+                <div class="life_image">
+                    <img src="image/life_12.jpeg" alt="Slice of Life Book">
+                </div>
+                <div class="life_tag">
+                    <p>F. Scott Fitzgerald</p>
+                    <a href="#" class="life_btn">Know More</a>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class="life_card">
-        <div class="life_image">
-            <img src="image/life_3.jpeg">
-        </div>
-        <div class="life_tag">
-            <p>John Green</p>
-            <a href="#" class="life_btn">Know More</a>
-        </div>
-    </div>
-
-    <div class="life_card">
-        <div class="life_image">
-            <img src="image/life_4.jpeg">
-        </div>
-        <div class="life_tag">
-            <p>Toshikazu Kawaguchi</p>
-            <a href="#" class="life_btn">Know More</a>
-        </div>
-    </div>
-
-    <div class="life_card">
-        <div class="life_image">
-            <img src="image/life_5.jpeg">
-        </div>
-        <div class="life_tag">
-            <p>Haruki Murakami</p>
-            <a href="#" class="life_btn">Know More</a>
-        </div>
-    </div>
-
-    <div class="life_card">
-        <div class="life_image">
-            <img src="image/life_6.jpeg">
-        </div>
-        <div class="life_tag">
-            <p>Sayaka Murata</p>
-            <a href="#" class="life_btn">Know More</a>
-        </div>
-    </div>
-
-    <div class="life_card">
-        <div class="life_image">
-            <img src="image/life_7.jpg">
-        </div>
-        <div class="life_tag">
-            <p>John Green</p>
-            <a href="#" class="life_btn">Know More</a>
-        </div>
-    </div>
-
-    <div class="life_card">
-        <div class="life_image">
-            <img src="image/life_8.jpeg">
-        </div>
-        <div class="life_tag">
-            <p>Tj Klune</p>
-            <a href="#" class="life_btn">Know More</a>
-        </div>
-    </div>
-
-    <div class="life_card">
-        <div class="life_image">
-            <img src="image/life_9.jpeg">
-        </div>
-        <div class="life_tag">
-            <p>Sally Rooney</p>
-            <a href="#" class="life_btn">Know More</a>
-        </div>
-    </div>
-
-    <div class="life_card">
-        <div class="life_image">
-            <img src="image/life_10.jpeg">
-        </div>
-        <div class="life_tag">
-            <p>Betty Smith</p>
-            <a href="#" class="life_btn">Know More</a>
-        </div>
-    </div>
-   
-    <div class="life_card">
-        <div class="life_image">
-            <img src="image/life_11.jpeg">
-        </div>
-        <div class="life_tag">
-            <p>R. J. Palacio</p>
-            <a href="#" class="life_btn">Know More</a>
-        </div>
-    </div>
-
-    <div class="life_card">
-        <div class="life_image">
-            <img src="image/life_12.jpeg">
-        </div>
-        <div class="life_tag">
-            <p>F. Scott Fitzgerald</p>
-            <a href="#" class="life_btn">Know More</a>
-        </div>
-    </div>
-</div>
-
-
-
-
     
     <!--Banner-->
-
     <div class="banner">
         <a href="#" class="banner_btn">Get To Know More</a>
-        
     </div>
 
-
-
-
-
     <!--Blog-->
-    
     <div id="Blog" class="blog">
         <h1>Our Blog</h1>
         <div class="blog_box">
-
             <div class="blog_card">
                 <div class="blog_img">
-                    <img src="image/blog_1.jpg">
+                    <img src="image/blog_1.jpg" alt="Blog Post">
                 </div>
                 <div class="blog_tag">
                     <h2>sci_fi_geek_42</h2>
@@ -678,7 +604,7 @@
 
             <div class="blog_card">
                 <div class="blog_img">
-                    <img src="image/blog_2.jpg">
+                    <img src="image/blog_2.jpg" alt="Blog Post">
                 </div>
                 <div class="blog_tag">
                     <h2>nature_lover_books</h2>
@@ -694,7 +620,7 @@
 
             <div class="blog_card">
                 <div class="blog_img">
-                    <img src="image/blog_3.jpg">
+                    <img src="image/blog_3.jpg" alt="Blog Post">
                 </div>
                 <div class="blog_tag">
                     <h2>fantasy_addict_22</h2>
@@ -707,34 +633,24 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-   
-   
-
-
-
+    
     <!--Footer-->
-
     <footer>
         <div class="footer_main">
-
             <div class="tag">
-                <img src="image/book-logo.jpg">
+                <img src="image/book-logo.jpg" alt="BookVerse Logo">
                 <p>
                     Ready to embark on a reading journey like never before? Join BookVerse today and let the pages of your next favorite book unfold before you. Unleash the power of personalized recommendations, connect with fellow book enthusiasts, and let the magic of storytelling transport you to new worlds. BookVerse - Where Every Book Finds Its Perfect Reader. 📖✨
                 </p>
-
             </div>
-
 
             <div class="tag">
                 <h1>Contact Info</h1>
                 <a href="#"><i class="fa-solid fa-phone"></i>+22 33 44 5555</a>
                 <a href="#"><i class="fa-solid fa-phone"></i>+33 55 66 8888</a>
                 <a href="#"><i class="fa-solid fa-envelope"></i>BookVerse123@gmail.com</a>
-                
             </div>
 
             <div class="tag">
@@ -745,7 +661,6 @@
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-linkedin-in"></i>
                 </div>
-                
             </div>
 
             <div class="tag">
@@ -753,19 +668,12 @@
                 <div class="search_bar">
                     <input type="text" placeholder="You email id here">
                     <button type="submit">Subscribe</button>
-                </div>                
-            </div>            
-            
+                </div>
+            </div>
         </div>
 
         <p class="end">Design By<span>Avinash</span></p>
-
     </footer>
-
-
-
-
-
 
     <script src="script.js"></script>
 </body>
