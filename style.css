@@ -397,9 +397,8 @@ section nav li.auth-btn a::after {
   
     section nav li {
       width: 100%;
-      margin: 10px 0;
+      margin: 0;
       text-align: center;
-      display: block;
     }
   
     section nav li a {
@@ -410,11 +409,10 @@ section nav li.auth-btn a::after {
       transition: background-color 0.3s ease;
     }
   
-    section nav li a:hover {
-      background-color: rgba(159, 58, 222, 0.1);
+    section nav li a::after {
+      display: none;
     }
   
-    /* Fix authentication buttons in mobile view */
     section nav li.auth-btn {
       width: 80%;
       margin: 10px auto;
@@ -1484,279 +1482,6 @@ footer .end span {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary-color: #0a84ff;
-    --secondary-color: #5e5ce6;
-    --accent-color: #2c2c2e;
-    --text-color: #f5f5f7;
-    --text-light: #a1a1a6;
-    --background: #1a1a1a;
-    --card-bg: #2c2c2e;
-    --shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    --shadow-hover: 0 5px 15px rgba(0, 0, 0, 0.4);
-  }
-  
-  section nav {
-    background: rgba(28, 28, 30, 0.9);
-  }
-  
-  .featured_book_card {
-    border-color: #3a3a3c;
-  }
-  
-  .featurde_book_img {
-    background: #3a3a3c;
-  }
-}
-
-/* Add these style improvements for better mobile responsiveness */
-
-/* Hide menu toggle by default (desktop view) */
-.menu-toggle {
-  display: none;
-  cursor: pointer;
-  font-size: 24px;
-}
-
-/* Improved responsive main section */
-section .main {
-  padding-top: 100px;
-  min-height: 80vh;
-  flex-wrap: wrap;
-}
-
-section .main h1 {
-  font-size: calc(32px + 2vw);
-  top: 0;
-  margin-bottom: 20px;
-}
-
-section .main p {
-  width: 100%;
-  max-width: 650px;
-  top: 0;
-  position: relative;
-  margin: 20px 0;
-}
-
-section .main .main_tag .main_btn {
-  top: 20px;
-  left: 0;
-  margin-top: 30px;
-  display: inline-block;
-}
-
-section .main .main_img {
-  margin-top: 40px;
-}
-
-section .main .main_img img {
-  width: 100%;
-  max-width: 650px;
-  height: auto;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-/* Improved responsive navigation */
-@media (max-width: 768px) {
-  section nav {
-    padding: 12px 20px;
-  }
-  
-  .menu-toggle {
-    display: block;
-  }
-  
-  section nav ul {
-    position: fixed;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    height: auto;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease;
-    z-index: 1000;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  section nav ul.active {
-    max-height: 450px;
-    overflow-y: auto;
-    padding: 10px 0;
-  }
-  
-  section nav li {
-    display: block;
-    text-align: center;
-    margin: 15px 0;
-    padding: 5px 0;
-  }
-  
-  section .main {
-    padding-top: 120px;
-  }
-
-  section .main .main_tag, 
-  section .main .main_img {
-    flex: 100%;
-    text-align: center;
-  }
-}
-
-/* Fixed About section for mobile */
-@media (max-width: 992px) {
-  .about {
-    padding: 50px 20px;
-    flex-direction: column;
-  }
-  
-  .about .about_image {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .about .about_image img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-  }
-  
-  .about .about_tag {
-    width: 100%;
-    padding: 0;
-  }
-  
-  .about .about_tag h1 {
-    font-size: 36px;
-    position: static;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .about .about_tag p {
-    width: 100%;
-    font-size: 1rem;
-    line-height: 1.5;
-    text-align: center;
-  }
-  
-  .about .about_tag .about_btn {
-    position: static;
-    margin-top: 30px;
-    display: inline-block;
-  }
-}
-
-/* Fix height issues for featured sections */
-.featured_boks,
-.featured_books,
-.arrivals,
-.life {
-  height: auto;
-  min-height: 100vh;
-  padding: 80px 0 50px;
-}
-
-/* Fix book card mobile layout issues */
-@media (max-width: 768px) {
-  .featured_boks .featured_book_box,
-  .featured_books .featured_book_box {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    padding: 0 20px 30px;
-  }
-  
-  .arrivals .arrivals_box,
-  .life .life_box {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    padding: 0 20px;
-  }
-  
-  .arrivals .arrivals_box .arrivals_card,
-  .life .life_box .life_card {
-    max-width: 200px;
-  }
-  
-  .blog .blog_box {
-    grid-template-columns: 1fr;
-    padding: 0 20px;
-  }
-  
-  .blog .blog_box .blog_card {
-    width: 100%;
-    margin: 20px 0;
-  }
-  
-  .blog .blog_box .blog_card .blog_img {
-    width: 100%;
-    height: 200px;
-  }
-}
-
-/* Extra small device fixes */
-@media (max-width: 480px) {
-  section .main h1 {
-    font-size: 28px;
-  }
-  
-  section .main p {
-    font-size: 16px;
-    line-height: 1.4;
-  }
-  
-  .featured_boks h1,
-  .featured_books h1,
-  .arrivals h1,
-  .life h1,
-  .blog h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-  
-  .featured_boks .featured_book_box,
-  .featured_books .featured_book_box {
-    grid-template-columns: 1fr;
-  }
-  
-  .arrivals .arrivals_box,
-  .life .life_box {
-    grid-template-columns: 1fr;
-  }
-  
-  .arrivals .arrivals_box .arrivals_card,
-  .life .life_box .life_card {
-    max-width: 100%;
-  }
-  
-  /* Fix footer for mobile */
-  footer .footer_main {
-    flex-direction: column;
-    padding: 30px 20px;
-  }
-  
-  footer .footer_main .tag {
-    width: 100%;
-    text-align: center;
-    margin: 20px 0;
-  }
-  
-  footer .footer_main .tag p {
-    width: 100%;
-    text-align: center;
-  }
-  
-  footer .footer_main .tag .search_bar {
-    margin: 0 auto;
-  }
-}
-
 /* Fix banner section for mobile */
 .banner {
   position: relative;
@@ -2008,35 +1733,6 @@ h2 {
   opacity: 1;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .book-carousel {
-    padding: 0 40px;
-  }
-  
-  .book-carousel .featured_book_card {
-    min-width: 220px;
-    max-width: 220px;
-  }
-}
-
-@media (max-width: 480px) {
-  .book-carousel {
-    padding: 0 30px;
-  }
-  
-  .book-carousel .featured_book_card {
-    min-width: 180px;
-    max-width: 180px;
-  }
-  
-  .book-carousel-button {
-    width: 36px;
-    height: 36px;
-    font-size: 16px;
-  }
-}
-
 /* Scroll animations for elements */
 .animate-on-scroll {
   opacity: 0;
@@ -2259,7 +1955,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
     transition: right 0.3s ease-in-out;
     z-index: 101;
@@ -2451,5 +2147,135 @@ img {
   section nav ul {
     transition: right 0.3s ease-in-out !important;
     max-height: none !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  section {
+    background: #1a1a1a;
+    color: #f5f5f7;
+  }
+
+  section nav {
+    background: #2c2c2e;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  section nav .logo img {
+    filter: brightness(0.8);
+  }
+
+  section nav ul li a {
+    color: #f5f5f7;
+  }
+
+  section nav ul li a:hover {
+    color: #0a84ff;
+  }
+
+  section .main {
+    background: #1a1a1a;
+    color: #f5f5f7;
+  }
+
+  section .main h1 span {
+    color: #0a84ff;
+  }
+
+  section .main p {
+    color: #a1a1a6;
+  }
+
+  section .main a.main_btn {
+    background: #0a84ff;
+    color: #f5f5f7;
+  }
+
+  section .main a.main_btn:hover {
+    background: #5e5ce6;
+  }
+
+  #About {
+    background: #1a1a1a;
+    color: #f5f5f7;
+  }
+
+  #About h1 {
+    color: #f5f5f7;
+  }
+
+  #About p {
+    color: #a1a1a6;
+  }
+
+  #About button.about_btn {
+    background: #0a84ff;
+    color: #f5f5f7;
+  }
+
+  #About button.about_btn:hover {
+    background: #5e5ce6;
+  }
+
+  #Featured {
+    background: #1a1a1a;
+    color: #f5f5f7;
+  }
+
+  #Featured h1 {
+    color: #f5f5f7;
+  }
+
+  #Featured .featured_book_card {
+    background: #2c2c2e;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  #Featured .featured_book_card h2 {
+    color: #f5f5f7;
+  }
+
+  #Featured .featured_book_card p {
+    color: #a1a1a6;
+  }
+
+  #Featured .featured_book_card a {
+    background: #0a84ff;
+    color: #f5f5f7;
+  }
+
+  #Featured .featured_book_card a:hover {
+    background: #5e5ce6;
+  }
+
+  #manipulation {
+    background: #1a1a1a;
+    color: #f5f5f7;
+  }
+
+  #manipulation h1 {
+    color: #f5f5f7;
+  }
+
+  #manipulation .featured_book_card {
+    background: #2c2c2e;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  #manipulation .featured_book_card h2 {
+    color: #f5f5f7;
+  }
+
+  #manipulation .featured_book_card p {
+    color: #a1a1a6;
+  }
+
+  #manipulation .featured_book_card a {
+    background: #0a84ff;
+    color: #f5f5f7;
+  }
+
+  #manipulation .featured_book_card a:hover {
+    background: #5e5ce6;
   }
 }
